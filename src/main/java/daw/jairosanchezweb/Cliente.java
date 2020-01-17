@@ -10,5 +10,43 @@ package daw.jairosanchezweb;
  * @author jairo
  */
 public class Cliente {
-    
+    private String nombre;
+    private int edad;
+    private String email;
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", edad=" + edad + ", email=" + email + '}';
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Cliente(String nombre,String email, int edad ) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.email = email;
+    }
+
 }
