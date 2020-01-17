@@ -18,18 +18,18 @@
     <body>
         <h1>Mi primera Web app con Java</h1>	
         <!-- Un scriptlet en JSP -->
-            <%
-                LocalDateTime ahora = LocalDateTime.now();
-                int dia = ahora.getDayOfMonth();
-                DayOfWeek diaSemana = ahora.getDayOfWeek();
-                Month mes = ahora.getMonth();
-                int año = ahora.getYear();
-String mensaje = "Hoy es " + dia + " " + diaSemana + " de " + mes + " del " + año;
-            %>
-            <!-- Una expresión en JSP -->
-            <p><%=mensaje%></p>
-            
-            <!-- Ejemplo de declaración -->
+        <%
+            LocalDateTime ahora = LocalDateTime.now();
+            int dia = ahora.getDayOfMonth();
+            DayOfWeek diaSemana = ahora.getDayOfWeek();
+            Month mes = ahora.getMonth();
+            int año = ahora.getYear();
+            String mensaje = "Hoy es " + dia + " " + diaSemana + " de " + mes + " del " + año;
+        %>
+        <!-- Una expresión en JSP -->
+        <p><%=mensaje%></p>
+
+        <!-- Ejemplo de declaración -->
         <%! int veces = 5;
             String saludo;
         %>
@@ -46,8 +46,8 @@ String mensaje = "Hoy es " + dia + " " + diaSemana + " de " + mes + " del " + a�
                 saludo = "Buenas noches";
             }
         %>
-        <%  for (int i = 0; i < veces; i++) { %>
-                <p><%= saludo%></p>
+        <%  for (int i = 0; i < veces; i++) {%>
+        <p><%= saludo%></p>
         <% }%>
 
     </body>

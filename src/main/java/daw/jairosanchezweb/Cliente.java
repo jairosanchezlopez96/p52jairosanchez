@@ -10,6 +10,7 @@ package daw.jairosanchezweb;
  * @author jairo
  */
 public class Cliente {
+
     private String nombre;
     private int edad;
     private String email;
@@ -43,7 +44,7 @@ public class Cliente {
         this.email = email;
     }
 
-    public Cliente(String nombre,String email, int edad ) {
+    public Cliente(String nombre, String email, int edad) {
         this.nombre = nombre;
         this.edad = edad;
         this.email = email;
